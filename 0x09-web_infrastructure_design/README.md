@@ -19,3 +19,11 @@ Each file in this repository holds a visual drawing of web infrastructures, from
 
 ![Distributed web infrastructure](https://drive.google.com/uc?id=1tALaMp9uxxkSaIPazoTPCxXQ5S6Htl-c)
 
+---
+
+### 
+
+Secured and monitored web infrastructure
+
+![Distributed web infrastructure](https://drive.google.com/uc?id=1WiM-89J4Nhyu4USr2YoJHbYEmjD-g-nV)
+
