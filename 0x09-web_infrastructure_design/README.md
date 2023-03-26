@@ -9,4 +9,6 @@ Each file in this repository holds a visual drawing of web infrastructures, from
 - Distributed web infrastructure
 - Secured and monitored web infrastructure
 
+### Simple web stack (white boarding/diagram)
+![Simple Webstack](https://drive.google.com/uc?id=1NVULNoOcdG0DmaLFe3dqJ7B4OadBOEPi)
 
