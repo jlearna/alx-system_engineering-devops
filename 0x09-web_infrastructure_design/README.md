@@ -21,9 +21,12 @@ Each file in this repository holds a visual drawing of web infrastructures, from
 
 ---
 
-### 
-
-Secured and monitored web infrastructure
+### Secured and monitored web infrastructure
 
 ![Distributed web infrastructure](https://drive.google.com/uc?id=1WiM-89J4Nhyu4USr2YoJHbYEmjD-g-nV)
 
+---
+
+### Scale up
+
+![Scale up](https://drive.google.com/uc?id=1pqdsYTWZJHwnSumY9yJUOBSoNMDSmIZo)
