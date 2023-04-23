@@ -3,4 +3,4 @@
 
 Host 35.229.54.225
      PasswordAuthentication no
-     IdentityFile ~/.ssh/holberton
+     IdentityFile ~/.ssh/school
