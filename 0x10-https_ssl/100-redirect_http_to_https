@@ -33,19 +33,19 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-frontend akoatem-frontend
+frontend myfrontend
         bind *:80
         mode http
         http-request redirect scheme https code 301 unless { ssl_fc }
         http-request set-header X_Forwarded-Proto http
         default_backend akoatem-backend
 
-frontend akoatem-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/akoatem.tech.pem
+frontend myfrontend-https
+        bind *:443 ssl crt /etc/haproxy/certs/cert.pem
         http-request set-header X-Forwarded-Proto https
         default_backend akoatem-backend
 
 backend akoatem-backend
         balance roundrobin
-        server 106489-web-01 34.232.68.152:80 check
-        server 106489-web-02 3.83.227.80:80 check
+        server 174673-web-01 52.86.161.223:80 check
+        server 174673-web-02 54.90.11.284:80 check
