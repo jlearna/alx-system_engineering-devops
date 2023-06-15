@@ -1,0 +1,32 @@
+server {
+    listen 80;
+    listen [::]:80;
+
+    # domain name pointed to the server
+    server_name 18.234.269.156;
+
+    access_log /var/log/nginx/reverse-access.log;
+    error_log /var/log/nginx/reverse-error.log;
+
+    location /airbnb-onepage {
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_pass http://127.0.0.1:5000;
+    }
+
+    location ~ /airbnb-dynamic/number_odd_or_even/(\d+)$ {
+	proxy_set_header Host $host;
+	proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+	proxy_set_header X-Real-IP $remote_addr;
+        proxy_pass http://127.0.0.1:5001/number_odd_or_even/$1;
+    }
+    
+    location /api {
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_pass http://127.0.0.1:5002;
+    }
+
+}
